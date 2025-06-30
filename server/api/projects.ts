@@ -18,7 +18,7 @@ export default defineEventHandler(() => {
       image: "https://via.placeholder.com/350x200?text=CMDB系统",
       link: "https://github.com/zhandandan/cmdb-system",
       company: "上海联蔚数据科技有限公司",
-      companyLink: "https://www.unionway.com/",
+      companyLink: "https://lianwei.com.cn/",
       technologies: ["Nuxt3", "Vue3", "Pinia", "Vite", "TypeScript", "Element Plus", "Tailwind"]
     },
     {
@@ -28,7 +28,7 @@ export default defineEventHandler(() => {
       image: "https://via.placeholder.com/350x200?text=数据报表系统",
       link: "https://github.com/zhandandan/volvo-reports",
       company: "上海联蔚数据科技有限公司",
-      companyLink: "https://www.unionway.com/",
+      companyLink: "https://lianwei.com.cn/",
       technologies: ["Power BI服务", "Power BI Desktop", "Power Apps"]
     },
     {
@@ -38,7 +38,7 @@ export default defineEventHandler(() => {
       image: "https://via.placeholder.com/350x200?text=CMP云管理平台",
       link: "https://github.com/zhandandan/cmp-platform",
       company: "上海联蔚数据科技有限公司",
-      companyLink: "https://www.unionway.com/",
+      companyLink: "https://lianwei.com.cn/",
       technologies: ["Vue全家桶", "ElementUI", "AntDesignVue", "ECharts", "qiankun", "Less", "Sass", "antvG6", "antvX6"]
     },
     {
@@ -48,7 +48,7 @@ export default defineEventHandler(() => {
       image: "https://via.placeholder.com/350x200?text=直播间系统",
       link: "https://github.com/zhandandan/live-system",
       company: "北京天相财富管理顾问有限公司上海分公司",
-      companyLink: "http://www.txsec.com/",
+      companyLink: "https://www.txcfgl.com/",
       technologies: ["Vue", "JS", "ECharts", "奥点云", "WebSocket", "ElementUI"]
     },
     {
@@ -58,7 +58,7 @@ export default defineEventHandler(() => {
       image: "https://via.placeholder.com/350x200?text=推广系统",
       link: "https://github.com/zhandandan/promotion-system",
       company: "北京天相财富管理顾问有限公司上海分公司",
-      companyLink: "http://www.txsec.com/",
+      companyLink: "https://www.txcfgl.com/",
       technologies: ["HTML5", "CSS3", "jQuery", "微信小程序", "百度小程序", "微信公众号", "ElementUI", "Vue"]
     },
     {
@@ -68,7 +68,7 @@ export default defineEventHandler(() => {
       image: "https://via.placeholder.com/350x200?text=OA系统",
       link: "https://github.com/zhandandan/oa-system",
       company: "北京天相财富管理顾问有限公司上海分公司",
-      companyLink: "http://www.txsec.com/",
+      companyLink: "https://www.txcfgl.com/",
       technologies: ["vue全家桶", "ElementUI"]
     },
     {
