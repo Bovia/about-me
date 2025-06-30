@@ -1,9 +1,12 @@
 <template>
   <div class="home-page">
-    <div class="hero-section">
+    <!-- 英雄区域 -->
+    <section class="hero-section">
       <div class="hero-content">
-        <h1>詹丹丹</h1>
-        <p class="role">前端开发工程师</p>
+        <div class="animated-text">
+          <h1>詹丹丹</h1>
+          <p class="role">前端开发工程师</p>
+        </div>
         <p class="intro">6年前端开发经验，擅长Vue、React、微前端和数据可视化</p>
         <div class="hero-buttons">
           <NuxtLink to="/profile" class="primary-button">查看我的简历</NuxtLink>
@@ -11,12 +14,17 @@
         </div>
       </div>
       <div class="hero-image">
-        <img src="https://via.placeholder.com/450x450?text=詹丹丹" alt="詹丹丹照片" />
+        <div class="image-wrapper">
+          <img src="https://via.placeholder.com/450x450?text=詹丹丹" alt="詹丹丹照片" />
+        </div>
+        <div class="decoration-circle"></div>
+        <div class="decoration-dots"></div>
       </div>
-    </div>
+    </section>
     
-    <div class="skills-section">
-      <h2>专业技能</h2>
+    <!-- 专业技能区域 -->
+    <section class="skills-section">
+      <h2 class="section-title">专业技能</h2>
       <div class="skills-container">
         <div class="skill-category">
           <h3>前端框架</h3>
@@ -70,10 +78,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     
-    <div class="experience-section">
-      <h2>工作经历</h2>
+    <!-- 工作经历区域 -->
+    <section class="experience-section">
+      <h2 class="section-title">工作经历</h2>
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-dot"></div>
@@ -105,35 +114,42 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     
-    <div class="project-highlights">
-      <h2>精选项目</h2>
+    <!-- 精选项目区域 -->
+    <section class="project-highlights">
+      <h2 class="section-title">精选项目</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <img src="https://via.placeholder.com/350x200?text=Emission+Tracker" alt="Emission Tracker" class="project-image" />
+          <div class="project-image-container">
+            <img src="https://via.placeholder.com/350x200?text=Emission+Tracker" alt="Emission Tracker" class="project-image" />
+          </div>
           <div class="project-info">
             <h3>Emission Tracker 碳排放追踪系统</h3>
             <p>跨国合作的碳排放数据管理平台，实现大数据深度分析</p>
-            <NuxtLink to="/projects" class="view-more">查看详情</NuxtLink>
+            <NuxtLink to="/projects" class="view-more">查看详情 →</NuxtLink>
           </div>
         </div>
         
         <div class="project-card">
-          <img src="https://via.placeholder.com/350x200?text=CMDB系统" alt="CMDB系统" class="project-image" />
+          <div class="project-image-container">
+            <img src="https://via.placeholder.com/350x200?text=CMDB系统" alt="CMDB系统" class="project-image" />
+          </div>
           <div class="project-info">
             <h3>CMDB资源管理系统</h3>
             <p>企业多云资源管理平台，帮助企业快速对接多种云产品</p>
-            <NuxtLink to="/projects" class="view-more">查看详情</NuxtLink>
+            <NuxtLink to="/projects" class="view-more">查看详情 →</NuxtLink>
           </div>
         </div>
         
         <div class="project-card">
-          <img src="https://via.placeholder.com/350x200?text=数据报表系统" alt="数据报表系统" class="project-image" />
+          <div class="project-image-container">
+            <img src="https://via.placeholder.com/350x200?text=数据报表系统" alt="数据报表系统" class="project-image" />
+          </div>
           <div class="project-info">
             <h3>Volvo数据报表系统</h3>
             <p>定制化数据报表平台，为决策提供关键数据支持</p>
-            <NuxtLink to="/projects" class="view-more">查看详情</NuxtLink>
+            <NuxtLink to="/projects" class="view-more">查看详情 →</NuxtLink>
           </div>
         </div>
       </div>
@@ -141,25 +157,26 @@
       <div class="view-all">
         <NuxtLink to="/projects" class="view-all-button">查看全部项目</NuxtLink>
       </div>
-    </div>
+    </section>
     
-    <div class="contact-section">
-      <h2>联系我</h2>
+    <!-- 联系我区域 -->
+    <section class="contact-section">
+      <h2 class="section-title">联系我</h2>
       <div class="contact-info">
         <div class="contact-item">
           <span class="contact-icon">📱</span>
-          <p>电话/微信: 17521300512</p>
+          <p>电话/微信: <a href="tel:17521300512">17521300512</a></p>
         </div>
         <div class="contact-item">
           <span class="contact-icon">✉️</span>
-          <p>邮箱: 375006500@qq.com</p>
+          <p>邮箱: <a href="mailto:375006500@qq.com">375006500@qq.com</a></p>
         </div>
         <div class="contact-item">
           <span class="contact-icon">📍</span>
           <p>地点: 上海，中国</p>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -175,257 +192,326 @@ useHead({
 
 <style scoped>
 .home-page {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+}
+
+/* 通用样式 */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+  color: #2d3748;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  border-radius: 2px;
+}
+
+section {
+  margin: 8rem 0;
+  position: relative;
 }
 
 /* 英雄区域 */
 .hero-section {
   display: flex;
   align-items: center;
-  gap: 3rem;
-  padding: 3rem 0;
-  margin-bottom: 4rem;
+  gap: 5rem;
+  padding: 5rem 0;
+  margin: 0 0 8rem;
+  position: relative;
 }
 
 .hero-content {
   flex: 1;
+  z-index: 10;
+}
+
+.animated-text {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.3s;
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin: 0 0 0.5rem;
+  color: #2d3748;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.role {
+  font-size: 2rem;
+  margin: 0 0 1.5rem;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.intro {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  color: #4a5568;
+  line-height: 1.7;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.6s;
+  max-width: 90%;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.9s;
+}
+
+.primary-button, .secondary-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.primary-button {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+}
+
+.primary-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 20px -3px rgba(59, 130, 246, 0.4);
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+
+.secondary-button:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+  transform: translateY(-3px);
 }
 
 .hero-image {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  z-index: 5;
+  opacity: 0;
+  animation: fadeInRight 1s forwards;
+  animation-delay: 0.6s;
 }
 
 .hero-image img {
   max-width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 5px solid white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-h1 {
-  font-size: 3.5rem;
-  margin: 0 0 0.5rem;
-  color: #2d3748;
-}
-
-.role {
-  font-size: 1.8rem;
-  margin: 0 0 1.5rem;
-  color: #3182ce;
-  font-weight: 600;
-}
-
-.intro {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #4a5568;
-  line-height: 1.6;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.primary-button, .secondary-button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.25rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.primary-button {
-  background-color: #3182ce;
-  color: white;
-}
-
-.primary-button:hover {
-  background-color: #2c5282;
-}
-
-.secondary-button {
-  background-color: transparent;
-  color: #3182ce;
-  border: 2px solid #3182ce;
-}
-
-.secondary-button:hover {
-  background-color: #ebf8ff;
-}
-
-/* 技能部分 */
-.skills-section {
-  margin-bottom: 4rem;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2.5rem;
-  color: #2d3748;
-  position: relative;
-  padding-bottom: 1rem;
-}
-
-h2::after {
-  content: "";
+.decoration-circle {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(96, 165, 250, 0.1));
+  top: -40px;
+  right: -40px;
+  z-index: 1;
+}
+
+.decoration-dots {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
   width: 100px;
-  height: 4px;
-  background-color: #3182ce;
+  height: 100px;
+  background-image: radial-gradient(#3b82f6 2px, transparent 2px);
+  background-size: 15px 15px;
+  z-index: 1;
+}
+
+/* 技能区域 */
+.skills-section {
+  padding: 2rem 0;
 }
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-top: 2rem;
 }
 
 .skill-category {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 2rem;
+  background-color: #f8fafc;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-category:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
 }
 
 .skill-category h3 {
-  color: #3182ce;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e2e8f0;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #3b82f6;
+  font-weight: 600;
 }
 
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 .skill-tag {
-  background-color: #ebf4ff;
-  color: #3182ce;
-  padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 2rem;
   font-size: 0.875rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
 }
 
-/* 工作经历 */
-.experience-section {
-  margin-bottom: 4rem;
+.skill-tag:hover {
+  background-color: #3b82f6;
+  color: white;
+  transform: scale(1.05);
 }
 
+/* 经历时间线 */
 .timeline {
   position: relative;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding-left: 2rem;
+  padding: 2rem 0;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
+  width: 3px;
+  background-color: #e2e8f0;
   top: 0;
-  left: 0;
-  height: 100%;
-  width: 4px;
-  background-color: #3182ce;
+  bottom: 0;
+  left: 1.5rem;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 3rem;
-}
-
-.timeline-item:last-child {
-  margin-bottom: 0;
+  padding: 0 0 3.5rem 3.5rem;
 }
 
 .timeline-dot {
   position: absolute;
-  left: -2.35rem;
-  top: 0;
-  width: 20px;
-  height: 20px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
-  background-color: #3182ce;
-  border: 3px solid white;
+  background-color: #3b82f6;
+  left: 0.75rem;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .timeline-content {
+  padding: 2rem;
   background-color: white;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateX(10px);
 }
 
 .timeline-content h3 {
-  margin-top: 0;
-  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
   color: #2d3748;
 }
 
 .timeline-place {
-  color: #3182ce;
-  font-weight: 600;
+  font-size: 1rem;
+  color: #3b82f6;
   margin-bottom: 0.25rem;
 }
 
 .timeline-period {
-  color: #718096;
   font-size: 0.875rem;
-  margin-bottom: 0.5rem;
+  color: #718096;
+  margin-bottom: 1rem;
 }
 
 .timeline-description {
+  font-size: 0.95rem;
   color: #4a5568;
-  margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-/* 项目亮点 */
-.project-highlights {
-  margin-bottom: 4rem;
-}
-
+/* 项目展示 */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 .project-card {
   background-color: white;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-container {
+  overflow: hidden;
+  height: 200px;
 }
 
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
 }
 
 .project-info {
@@ -433,100 +519,186 @@ h2::after {
 }
 
 .project-info h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
   color: #2d3748;
-}
-
-.project-info p {
-  color: #4a5568;
-  margin-bottom: 1rem;
-}
-
-.view-more {
-  color: #3182ce;
-  text-decoration: none;
   font-weight: 600;
 }
 
+.project-info p {
+  font-size: 0.95rem;
+  color: #718096;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.view-more {
+  color: #3b82f6;
+  font-size: 0.95rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
 .view-more:hover {
-  text-decoration: underline;
+  transform: translateX(5px);
 }
 
 .view-all {
   text-align: center;
+  margin-top: 3rem;
 }
 
 .view-all-button {
   display: inline-block;
-  background-color: transparent;
-  color: #3182ce;
-  border: 2px solid #3182ce;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.25rem;
+  padding: 0.75rem 2rem;
+  background-color: #e2e8f0;
+  color: #4a5568;
+  border-radius: 2rem;
   text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .view-all-button:hover {
-  background-color: #ebf8ff;
+  background-color: #3b82f6;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
 }
 
 /* 联系部分 */
 .contact-section {
-  margin-bottom: 3rem;
+  padding: 3rem;
+  background-color: #f8fafc;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin: 8rem 0;
 }
 
 .contact-info {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .contact-icon {
   font-size: 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .contact-item p {
-  margin: 0;
+  font-size: 1.1rem;
   color: #4a5568;
 }
 
-/* 响应式设计 */
-@media (max-width: 768px) {
+.contact-item a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* 动画 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 响应式调整 */
+@media (max-width: 1024px) {
   .hero-section {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem 0;
     text-align: center;
-    gap: 2rem;
   }
   
-  .hero-buttons {
-    justify-content: center;
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  .hero-image img {
-    max-width: 250px;
+  .intro {
+    max-width: 100%;
   }
   
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .timeline::before {
+    left: 2rem;
+  }
+  
+  .timeline-dot {
+    left: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   
   .role {
     font-size: 1.5rem;
   }
   
+  .intro {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
   .contact-info {
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
   }
 }
 </style> 
