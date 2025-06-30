@@ -28,7 +28,9 @@
           <div class="avatar-decoration"></div>
         </div>
         <div class="profile-info">
-          <h2>{{ profile.name }}</h2>
+          <h2>
+            <NuxtLink to="/blog" class="name-link">{{ profile.name }}</NuxtLink>
+          </h2>
           <p class="profile-title">{{ profile.title }}</p>
           <div class="profile-basic-info">
             <p>{{ profile.age }} | {{ profile.gender }} | {{ profile.status }}</p>
@@ -440,8 +442,33 @@ onMounted(() => {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 2rem;
-  color: #2d3748;
   font-weight: 700;
+}
+
+.name-link {
+  color: #2d3748;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.name-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  transition: width 0.3s ease;
+}
+
+.name-link:hover {
+  color: #3b82f6;
+}
+
+.name-link:hover::after {
+  width: 100%;
 }
 
 .profile-title {

@@ -3,7 +3,7 @@
     <header class="header">
       <div class="header-content">
         <div class="logo">
-          <NuxtLink to="/" class="logo-link">詹丹丹</NuxtLink>
+          <!-- <NuxtLink to="/" class="logo-link">詹丹丹</NuxtLink> -->
         </div>
         <nav class="nav">
           <NuxtLink to="/" class="nav-link">首页</NuxtLink>
