@@ -140,8 +140,8 @@
             <p>企业多云资源管理平台，帮助企业快速对接多种云产品</p>
             <NuxtLink to="/projects" class="view-more">查看详情 →</NuxtLink>
           </div>
-        </div>
-        
+      </div>
+      
         <div class="project-card">
           <div class="project-image-container">
             <img src="https://via.placeholder.com/350x200?text=数据报表系统" alt="数据报表系统" class="project-image" />
@@ -175,7 +175,7 @@
           <span class="contact-icon">📍</span>
           <p>地点: 上海，中国</p>
         </div>
-      </div>
+    </div>
     </section>
   </div>
 </template>
@@ -648,8 +648,8 @@ h1 {
     gap: 4rem;
     padding: 3rem 0;
     text-align: center;
-  }
-  
+}
+
   .hero-content {
     display: flex;
     flex-direction: column;

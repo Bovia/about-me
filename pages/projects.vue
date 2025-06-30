@@ -44,7 +44,7 @@
             <div class="project-image-container">
               <img :src="project.image" :alt="project.name" class="project-image" />
               <div class="project-overlay">
-                <a :href="project.link" target="_blank" class="view-detail">查看详情</a>
+                <NuxtLink :to="`/project/${project.id}`" class="view-detail">查看详情</NuxtLink>
               </div>
             </div>
             <div class="project-info">
@@ -58,13 +58,13 @@
                 <span v-for="tech in project.technologies" :key="tech" class="tech-tag">{{ tech }}</span>
               </div>
               <div class="button-group">
+                <NuxtLink :to="`/project/${project.id}`" class="detail-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  项目详情
+                </NuxtLink>
                 <a :href="project.link" target="_blank" class="view-button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                  查看项目
-                </a>
-                <a :href="project.companyLink" target="_blank" class="company-button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                  公司官网
+                  源代码
                 </a>
               </div>
             </div>
@@ -446,7 +446,7 @@ useHead({
   margin-top: auto;
 }
 
-.view-button, .company-button {
+.view-button, .detail-button {
   flex: 1;
   display: flex;
   align-items: center;
@@ -463,8 +463,21 @@ useHead({
   font-size: 0.95rem;
 }
 
-.view-button svg, .company-button svg {
+.view-button svg, .detail-button svg {
   transition: transform 0.3s ease;
+}
+
+.detail-button {
+  background-color: #8b5cf6;
+}
+
+.detail-button:hover {
+  background-color: #7c3aed;
+  transform: translateY(-3px);
+}
+
+.detail-button:hover svg {
+  transform: scale(1.1);
 }
 
 .view-button {
@@ -478,15 +491,6 @@ useHead({
 
 .view-button:hover svg {
   transform: translateX(3px);
-}
-
-.company-button {
-  background-color: #10b981;
-}
-
-.company-button:hover {
-  background-color: #059669;
-  transform: translateY(-3px);
 }
 
 .no-results {

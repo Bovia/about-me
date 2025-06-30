@@ -10,6 +10,7 @@
           <NuxtLink to="/about" class="nav-link">关于我</NuxtLink>
           <NuxtLink to="/projects" class="nav-link">作品集</NuxtLink>
           <NuxtLink to="/profile" class="nav-link">个人简历</NuxtLink>
+          <NuxtLink to="/blog" class="nav-link">个人博客</NuxtLink>
           <NuxtLink to="/ssr-guide" class="nav-link">SSR指南</NuxtLink>
         </nav>
         <div class="social-links">
@@ -45,6 +46,7 @@
           <NuxtLink to="/" class="footer-link">首页</NuxtLink>
           <NuxtLink to="/about" class="footer-link">关于我</NuxtLink>
           <NuxtLink to="/projects" class="footer-link">作品集</NuxtLink>
+          <NuxtLink to="/blog" class="footer-link">个人博客</NuxtLink>
           <NuxtLink to="/profile" class="footer-link">个人简历</NuxtLink>
         </div>
         <div class="footer-contact">

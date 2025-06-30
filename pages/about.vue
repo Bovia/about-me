@@ -17,22 +17,22 @@
       <div class="about-text">
         <div class="text-section animate-section">
           <h2>我的个人介绍</h2>
-          <p>
+        <p>
             大家好，我是詹丹丹，一名拥有6年前端开发经验的工程师。我热爱编程和技术创新，对构建高性能、用户友好的应用程序充满热情。
-          </p>
-          <p>
+        </p>
+        <p>
             我目前任职于普华永道(PwC)，担任Senior Associate前端开发工程师，主要负责Emission Tracker碳排放追踪系统的开发与维护。在此之前，我曾在上海联蔚数据科技有限公司工作，参与多个大型企业级项目的开发，包括CMP云管理平台、CMDB资源管理系统等。
-          </p>
+        </p>
         </div>
         
         <div class="text-section animate-section">
           <h2>我的专长</h2>
-          <p>
+        <p>
             在前端开发领域，我擅长Vue2/3、React、微前端架构和数据可视化。我熟练掌握ES6、TypeScript、CSS3等前端技术，以及ElementUI、AntDesign等UI框架。我还有丰富的数据可视化开发经验，熟悉ECharts、D3、AntV G6等可视化工具库，能够构建复杂的数据展示界面。
           </p>
           <p>
             除了技术能力，我还有良好的项目管理经验，曾负责安利项目的前端团队管理，具备团队协作和项目把控能力。我善于解决复杂问题，如微前端架构升级、复杂动态表单实现、大数据量场景下的性能优化等。
-          </p>
+        </p>
         </div>
         
         <div class="text-section animate-section">
