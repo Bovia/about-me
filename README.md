@@ -4,18 +4,23 @@
 
 ## 关于我
 
-我是詹丹丹，一位资深前端开发工程师，拥有超过8年的行业经验。我专注于构建高性能、用户友好的Web应用，并具有丰富的全栈开发经验。
+我是詹丹丹，一位资深前端开发工程师，拥有6年的行业经验。我专注于构建高性能、用户友好的Web应用，并具有丰富的全栈开发经验。
+
+熟练掌握Vue2/3、React、TypeScript等技术栈，参与开发过多个大型企业级应用。擅长低代码平台搭建、数据可视化展示、微前端架构等。曾任职普华永道、上海联蔚数据科技等公司，在多项目中担任前端开发工程师角色，负责技术选型、框架搭建、功能开发与优化。
 
 ### 专业技能
-- 前端框架：Vue.js，React，Nuxt.js
-- 后端技术：Node.js，Express，Firebase
-- 其他技术：TypeScript，RESTful API设计，响应式设计
-- UI/UX：Figma，Adobe XD
+- 前端框架：Vue2/3, React, Nuxt3, Pinia, Vite, TypeScript
+- UI框架：ElementUI, AntDesign Vue, AntDesign, Tailwind
+- 数据可视化：Apache ECharts, D3, AntV G6, Apache Superset
+- 低代码工具：Form Generator, Power BI, Power App
+- 其他：微前端, ES6, H5, CSS3, UI设计
 
 ### 工作经历
-- **腾讯科技** (2019-至今) - 高级前端开发工程师
-- **阿里巴巴** (2016-2019) - 前端开发工程师
-- **百度** (2014-2016) - 初级开发工程师
+- **普华永道 PwC** (现在) - Senior Associate 前端开发工程师
+- **上海联蔚数据科技有限公司** (2020.12 - 2023.5) - WEB前端
+- **北京天相财富管理顾问有限公司上海分公司** (2019 - 2020) - WEB前端
+- **上海智天信息科技有限公司** (2018 - 2019) - WEB前端+UI设计
+- **PS讲师** (早期工作)
 
 ## 项目技术栈
 
@@ -71,11 +76,28 @@ yarn preview
 - `middleware/` - Nuxt中间件
 - `public/` - 静态资源
 
+## 代表项目
+
+### Emission Tracker 碳排放追踪系统 (普华永道 PwC)
+集成Apache Superset到Emission Tracker内，作为主项目可视化的一种拓展，实现大数据深度分析。普华永道与客户分布于不同区域的跨职能项目团队合作，将碳追踪管理平台与其现有的IT系统集成在一起。
+
+**技术栈:** React, Vue, TS, ElementUI, Antd, Form Generator, Superset, Echarts, D3, AntV G6
+
+### CMDB资源管理系统 (上海联蔚数据科技有限公司)
+CMDB资源管理系统是CMP中的一个核心功能，集中管理了企业的多云资源，通过灵活字段配置和模块化表单。帮助企业在多云环境下快速对接多种云产品，并结合账单、预警等功能提供精确到资源实例的监管。
+
+**技术栈:** Nuxt3, Vue3, Pinia, Vite, TypeScript, Element Plus, Tailwind
+
+### CMP云管理平台 (上海联蔚数据科技有限公司)
+CMP产品是一种基于云计算的混合云管理平台，主要用于企业的云资源管理和自动化运维。帮助企业在多云环境中集中管理和监控云资源，提高资源利用率和效率，减少运维工作量和人为错误。
+
+**技术栈:** Vue全家桶, ElementUI, AntDesignVue, ECharts, qiankun, Less, Sass, antvG6, antvX6
+
 ## 联系方式
 
-- 电子邮件: zhandandan@example.com
-- LinkedIn: linkedin.com/in/zhandandan
-- GitHub: github.com/zhandandan
+- 电子邮件: 375006500@qq.com
+- LinkedIn: [linkedin.com/in/dandanzhan](https://linkedin.com/in/dandanzhan)
+- GitHub: [github.com/Bovia](https://github.com/Bovia)
 
 ---
 
