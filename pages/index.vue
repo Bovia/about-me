@@ -12,6 +12,7 @@
         <div class="hero-buttons">
           <NuxtLink to="/profile" class="primary-button">查看我的简历</NuxtLink>
           <NuxtLink to="/projects" class="secondary-button">浏览我的作品</NuxtLink>
+          <NuxtLink to="/certificates" class="certificate-button">专业证书</NuxtLink>
         </div>
       </div>
       <div class="hero-image">
@@ -282,9 +283,11 @@ h1 {
   opacity: 0;
   animation: fadeInUp 1s forwards;
   animation-delay: 0.9s;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.primary-button, .secondary-button {
+.primary-button, .secondary-button, .certificate-button {
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -314,6 +317,17 @@ h1 {
 .secondary-button:hover {
   background-color: rgba(59, 130, 246, 0.1);
   transform: translateY(-3px);
+}
+
+.certificate-button {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+}
+
+.certificate-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 20px -3px rgba(16, 185, 129, 0.4);
 }
 
 .hero-image {
