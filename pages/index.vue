@@ -162,6 +162,9 @@
       </div>
     </section>
     
+    <!-- 动画效果展示 -->
+    <AnimationShowcase />
+    
     <!-- 联系我区域 -->
     <section class="contact-section">
       <h2 class="section-title">联系我</h2>
