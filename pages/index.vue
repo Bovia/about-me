@@ -2,6 +2,7 @@
   <div class="home-page">
     <!-- 英雄区域 -->
     <section class="hero-section">
+      <FloatingParticles :particle-count="25" :opacity="0.2" />
       <div class="hero-content">
         <div class="animated-text">
           <h1>詹丹丹</h1>
@@ -19,6 +20,7 @@
         </div>
         <div class="decoration-circle"></div>
         <div class="decoration-dots"></div>
+        <InteractiveNetwork :width="200" :height="150" :node-count="12" />
       </div>
     </section>
     
@@ -29,52 +31,52 @@
         <div class="skill-category">
           <h3>前端框架</h3>
           <div class="skill-tags">
-            <span class="skill-tag">Vue2</span>
-            <span class="skill-tag">Vue3</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Nuxt3</span>
-            <span class="skill-tag">微前端</span>
+            <AnimatedSkillTag class="skill-tag">Vue2</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">Vue3</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">React</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">Nuxt3</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">微前端</AnimatedSkillTag>
           </div>
         </div>
         
         <div class="skill-category">
           <h3>语言</h3>
           <div class="skill-tags">
-            <span class="skill-tag">ES6</span>
-            <span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">HTML5</span>
+            <AnimatedSkillTag class="skill-tag">ES6</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">TypeScript</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">CSS3</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">HTML5</AnimatedSkillTag>
           </div>
         </div>
         
         <div class="skill-category">
           <h3>UI框架</h3>
           <div class="skill-tags">
-            <span class="skill-tag">ElementUI</span>
-            <span class="skill-tag">AntDesign Vue</span>
-            <span class="skill-tag">AntDesign</span>
-            <span class="skill-tag">Tailwind</span>
+            <AnimatedSkillTag class="skill-tag">ElementUI</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">AntDesign Vue</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">AntDesign</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">Tailwind</AnimatedSkillTag>
           </div>
         </div>
         
         <div class="skill-category">
           <h3>数据可视化</h3>
           <div class="skill-tags">
-            <span class="skill-tag">ECharts</span>
-            <span class="skill-tag">D3</span>
-            <span class="skill-tag">AntV G6</span>
-            <span class="skill-tag">Superset</span>
-            <span class="skill-tag">Power BI</span>
+            <AnimatedSkillTag class="skill-tag">ECharts</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">D3</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">AntV G6</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">Superset</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">Power BI</AnimatedSkillTag>
           </div>
         </div>
         
         <div class="skill-category">
           <h3>工具链</h3>
           <div class="skill-tags">
-            <span class="skill-tag">Vite</span>
-            <span class="skill-tag">Pinia</span>
-            <span class="skill-tag">Form Generator</span>
-            <span class="skill-tag">Power App</span>
+            <AnimatedSkillTag class="skill-tag">Vite</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">Pinia</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">Form Generator</AnimatedSkillTag>
+            <AnimatedSkillTag class="skill-tag">Power App</AnimatedSkillTag>
           </div>
         </div>
       </div>
@@ -84,6 +86,7 @@
     <section class="experience-section">
       <h2 class="section-title">工作经历</h2>
       <div class="timeline">
+        <TimelineProgress :progress="100" :height="320" />
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
@@ -404,7 +407,6 @@ h1 {
 .skill-tag:hover {
   background-color: #3b82f6;
   color: white;
-  transform: scale(1.05);
 }
 
 /* 经历时间线 */

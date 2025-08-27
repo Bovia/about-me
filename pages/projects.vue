@@ -1,6 +1,7 @@
 <template>
   <div class="projects-page">
     <div class="page-header">
+      <FloatingParticles :particle-count="20" :opacity="0.15" color="#60a5fa" />
       <h1 class="section-title">我的作品集</h1>
       <p class="description">以下是我完成的一些项目作品，展示我的技术能力和实际工作经验。</p>
       <div class="decoration-dots"></div>
