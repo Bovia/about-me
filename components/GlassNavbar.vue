@@ -89,8 +89,8 @@ const navItems = [
   { name: '关于我', path: '/about' },
   { name: '作品集', path: '/projects' },
   { name: '专业证书', path: '/certificates' },
+  { name: '技术博客', path: '/tech-blog' },
   { name: '个人简历', path: '/profile' },
-  { name: '个人博客', path: '/blog' },
   { name: 'SSR指南', path: '/ssr-guide' }
 ]
 

@@ -215,12 +215,8 @@
         </div>
       </div>
       
-      <div class="profile-download animate-section">
-        <a href="/Web前端开发 6年 詹丹丹Bovia简历.pdf" target="_blank" class="download-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-          下载完整简历
-        </a>
-      </div>
+      <!-- 简历下载组件 -->
+      <ResumeDownload />
     </div>
   </div>
 </template>

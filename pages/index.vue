@@ -163,27 +163,17 @@
       </div>
     </section>
     
+    <!-- 技能雷达图 -->
+    <SkillRadar />
+    
+    <!-- GitHub 代码展示 -->
+    <GitHubShowcase />
+    
     <!-- 动画效果展示 -->
     <AnimationShowcase />
     
-    <!-- 联系我区域 -->
-    <section class="contact-section">
-      <h2 class="section-title">联系我</h2>
-      <div class="contact-info">
-        <div class="contact-item">
-          <span class="contact-icon">📱</span>
-          <p>电话/微信: <a href="tel:17521300512">17521300512</a></p>
-        </div>
-        <div class="contact-item">
-          <span class="contact-icon">✉️</span>
-          <p>邮箱: <a href="mailto:375006500@qq.com">375006500@qq.com</a></p>
-        </div>
-        <div class="contact-item">
-          <span class="contact-icon">📍</span>
-          <p>地点: 上海，中国</p>
-        </div>
-    </div>
-    </section>
+    <!-- 联系表单 -->
+    <ContactForm />
   </div>
 </template>
 
